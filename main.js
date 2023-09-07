@@ -2,11 +2,11 @@ const offBtn = document.querySelector('.off-btn');
 const hibernateBtn = document.querySelector('.hibernate-btn');
 
 offBtn.addEventListener('click', () => {
-    sendRequest('http://192.168.0.100:3000/SWITCHOFF');
+    sendRequest('https://192.168.0.100:3000/SWITCHOFF');
 });
 
 hibernateBtn.addEventListener('click', () => {
-    sendRequest('http://192.168.0.100:3000/HIBERNATE');
+    sendRequest('https://192.168.0.100:3000/HIBERNATE');
 });
 
 function sendRequest(url) {
