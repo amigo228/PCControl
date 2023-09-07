@@ -2,11 +2,11 @@ const offBtn = document.querySelector('.off-btn');
 const hibernateBtn = document.querySelector('.hibernate-btn');
 
 offBtn.addEventListener('click', () => {
-    sendRequest('http://192.168.1.100:3000/SWITCHOFF'); // Замените IP-адрес на ваш IP и порт на порт вашего сервера
+    sendRequest('http://192.168.0.100:3000/SWITCHOFF'); // Замените IP-адрес на ваш IP и порт на порт вашего сервера
 });
 
 hibernateBtn.addEventListener('click', () => {
-    sendRequest('http://192.168.1.100:3000/HIBERNATE'); // Замените IP-адрес на ваш IP и порт на порт вашего сервера
+    sendRequest('http://192.168.0.100:3000/HIBERNATE'); // Замените IP-адрес на ваш IP и порт на порт вашего сервера
 });
 
 function sendRequest(url) {
